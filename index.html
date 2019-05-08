@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping List</title>
+    <link rel = "stylesheet" href= "shopping.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src='shopping.js'></script>
+</head>
+<body>
+        <iframe src ="shop.mp3" allow = "autoplay" id ='music'></iframe>
+    <!-- <audio autoplay>
+        <source src = 'shop.mp3' type= "audio/mpeg"></source>
+    </audio> -->
+    <header class = "container">
+        <div class = "intro">
+            <img class = "shoppingCartImage" src = "https://cdn0.iconfinder.com/data/icons/market-and-economics-19/48/27-512.png" alt ="shoppingCart">
+              <h1>Shopping List</h1>
+             <h2>By:Sayeed Joseph</h2>
+            <p> It's time to make your shopping list <br>
+            Enter each item in the textbox below, then press add</p>
+        </div>
+      </header>
+      
+    <!--This will hold the reset and check button-->
+      <div class = "container">
+        <form class = "restContainer">
+          <button class = 'reset-list' type = "submit">Reset</button> 
+           <button class = 'checked' type = "submit">Check</button> 
+        </form>
+      </div>
+    
+    <!--This section will allow us to add groceries -->
+      <div class = 'list-area-insertion container' > 
+        <form> 
+          <input type = "text" class = "shoppingListItem" name = "shoppingListItem" placeholder = "Enter items and click add"> 
+          <button type = "submit" id = "add" value = "add">Add</button>
+        </form>
+      </div>
+      
+    <!--This section holds on the list items -->
+      <div class = 'list'></div>
+</body>
+</html>
